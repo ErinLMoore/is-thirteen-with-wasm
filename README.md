@@ -1,3 +1,16 @@
 # find out if it's 13
 
-## usage: ?????
+## how to use this library
+Give a value to the function, `is_thirteen(var)`, and it will return a boolean that tells you if the value is 13.
+
+sample import and usage:
+```
+const find_out = async possibly_thirteen => {
+  var wasm = await import("@erin-l-moore/is-thirteen-with-wasm")
+  return wasm.is_thirteen(possibly_thirteen)
+}
+```
+
+`find_out("13")` -> returns `true`
+`find_out("thirteen")` -> returns `true`
+`find_out("12")` -> returns `false`
