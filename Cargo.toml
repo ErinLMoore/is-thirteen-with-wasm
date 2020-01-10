@@ -1,6 +1,6 @@
 [package]
 name = "is-thirteen-with-wasm"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Erin Moore <erinmoorethefirst@gmail.com>"]
 description = "find out if it's 13"
 license = "MIT"
