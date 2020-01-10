@@ -1,10 +1,11 @@
 [package]
 name = "is-thirteen-with-wasm"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["Erin Moore <erinmoorethefirst@gmail.com>"]
 description = "find out if it's 13"
 license = "MIT"
-repository = "https://github.com/ErinLMoore/hello-wasm"
+repository = "https://github.com/ErinLMoore/is-thirteen-with-wasm"
+keywords = ["wasm", "rust", "cool", "13", "thirteen"]
 
 [lib]
 crate-type = ["cdylib"]
