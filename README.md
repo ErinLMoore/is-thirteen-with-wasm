@@ -14,3 +14,6 @@ const find_out = async possibly_thirteen => {
 `find_out("13")` -> returns `true`
 `find_out("thirteen")` -> returns `true`
 `find_out("12")` -> returns `false`
+
+
+inspired by: [is-thirteen](https://github.com/jezen/is-thirteen)
