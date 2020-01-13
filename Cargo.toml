@@ -1,6 +1,6 @@
 [package]
 name = "is-thirteen-with-wasm"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["Erin Moore <erinmoorethefirst@gmail.com>"]
 description = "find out if it's 13"
 license = "MIT"
@@ -9,6 +9,9 @@ keywords = ["wasm", "rust", "cool", "13", "thirteen"]
 
 [lib]
 crate-type = ["cdylib"]
+
+[profile.release]
+lto = true
 
 [dependencies]
 wasm-bindgen = "0.2"
