@@ -4,13 +4,7 @@ use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]
 pub fn is_thirteen(possibly_thirteen: &str) -> bool{
-    use THIRTEENS;
-    let thirteen_iter = THIRTEENS.iter();
-    let mut return_val:bool = false;
-    for val in thirteen_iter {
-        return_val = return_val || &possibly_thirteen.to_lowercase().as_str() == val;    
-    }
-    return_val
+    THIRTEENS.iter().find(|&&x| x == possibly_thirteen.to_lowercase().as_str()) != None
 }
 
 const THIRTEENS: [&str; 233] = [
